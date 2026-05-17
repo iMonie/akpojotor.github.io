@@ -272,15 +272,28 @@ nou224068313@noun.edu.ng
 
 <!-- ✅ VISITOR COUNTER SCRIPT (CUSTOM DISPLAY) -->
 <script>
-fetch("https://hits.sh/imonie.github.io/akpojotor.json")
-.then(response => response.json())
+const namespace = "akpojotor-portfolio";
+const key = "visits";
+
+// First, increment the counter
+fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+.then(res => res.json())
 .then(data => {
     document.getElementById("visitor-count").innerHTML =
-        "👁 Visitors: " + data.count;
+        "👁 Visitors: " + data.value;
 })
 .catch(() => {
-    document.getElementById("visitor-count").innerHTML =
-        "👁 Visitors: active";
+    // Fallback: try to just get current value
+    fetch(`https://api.countapi.xyz/get/${namespace}/${key}`)
+    .then(res => res.json())
+    .then(data => {
+        document.getElementById("visitor-count").innerHTML =
+            "👁 Visitors: " + data.value;
+    })
+    .catch(() => {
+        document.getElementById("visitor-count").innerHTML =
+            "👁 Visitors: 1";
+    });
 });
 </script>
 
