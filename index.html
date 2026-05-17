@@ -10,14 +10,14 @@
 /* 🌌 BACKGROUND */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #020617, #0f172a);
     color: #e2e8f0;
 }
 
-/* 🌟 GLOBAL CONTAINER */
+/* 🌟 CONTAINER */
 .container {
-    max-width: 950px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
@@ -45,10 +45,15 @@ h1 {
     color: #94a3b8;
 }
 
+.highlight {
+    color: #22c55e;
+    font-weight: bold;
+}
+
 /* PROFILE IMAGE */
 .profile-img {
-    width: 210px;
-    height: 210px;
+    width: 220px;
+    height: 220px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #38bdf8;
@@ -58,4 +63,208 @@ h1 {
 /* BUTTONS */
 .btn {
     display: inline-block;
-    margin: 10px
+    margin: 10px 8px;
+    padding: 12px 22px;
+    background: #38bdf8;
+    color: #020617;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+/* WHATSAPP */
+.btn-whatsapp {
+    background: #22c55e;
+    color: white;
+}
+
+.btn-whatsapp:hover {
+    background: #16a34a;
+}
+
+/* LINKS */
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+    margin-top: 30px;
+    padding: 25px;
+}
+
+/* PROJECT CARDS */
+.card {
+    margin: 20px 0;
+    padding: 18px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #38bdf8;
+}
+
+/* PROJECT IMAGE */
+.project-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* CTA BOX */
+.cta {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #94a3b8;
+}
+
+small {
+    color: #94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Oghenechovwe AKPOJOTOR</h1>
+
+<p class="tagline">
+AI • Machine Learning • Cloud Engineering • Intelligent Systems
+</p>
+
+<img src="assets/images/profile.jpg" alt="Oghenechovwe AKPOJOTOR" class="profile-img">
+
+<p class="highlight">
+👉 Open to remote opportunities in AI, Cloud, and Intelligent Systems.
+</p>
+
+<div>
+<a href="Oghenechovwe_Akpojotor_CV.pdf" class="btn">📄 View CV</a>
+
+<a href="mailto:nou224068313@noun.edu.ng?subject=Opportunity%20Inquiry&body=Hello%20Oghenechovwe," class="btn">
+✉️ Email Me
+</a>
+
+<a href="https://wa.me/2348035341982" class="btn btn-whatsapp" target="_blank">
+💬 WhatsApp
+</a>
+</div>
+
+<p>
+<a href="https://github.com/iMonie">GitHub</a> |
+<a href="https://www.linkedin.com/in/databit365">LinkedIn</a>
+</p>
+
+</header>
+
+<div class="container">
+
+<section class="glass">
+<h2>Research Profile</h2>
+<p>
+I am an aspiring PhD researcher in Information Technology focused on machine learning systems,
+adaptive intelligence, and AI-driven monitoring systems. I build intelligent solutions capable
+of detecting changes in evolving data environments and supporting predictive decision-making.
+</p>
+</section>
+
+<section class="glass cta">
+<h2>Opportunities</h2>
+<p>I am actively seeking roles in AI, Machine Learning, and Cloud Engineering.</p>
+
+<a href="Emmanuel_Akpojotor_CV.pdf" class="btn">View CV</a>
+<a href="mailto:nou224068313@noun.edu.ng" class="btn">Contact</a>
+<a href="https://wa.me/2348035341982" class="btn btn-whatsapp" target="_blank">
+Chat on WhatsApp
+</a>
+</section>
+
+<section class="glass">
+<h2>Featured Projects</h2>
+
+<div class="card">
+<img src="assets/images/fraud.png" class="project-img">
+<h3>Fraud Detection AI System</h3>
+<p>End-to-end ML system with SMOTE, model tuning, and deployment.</p>
+<a href="https://github.com/iMonie/fraud-detection-ml">View Project</a>
+</div>
+
+<div class="card">
+<img src="assets/images/drift.png" class="project-img">
+<h3>Concept Drift Detection</h3>
+<p>Streaming system using KS-test and adaptive monitoring.</p>
+<a href="https://github.com/iMonie/shift-detection-study">View Project</a>
+</div>
+
+<div class="card">
+<img src="assets/images/mnist.png" class="project-img">
+<h3>MNIST Deep Learning</h3>
+<p>CNN-based handwritten digit recognition.</p>
+<a href="https://github.com/iMonie/mnistproject">View Project</a>
+</div>
+
+<div class="card">
+<img src="assets/images/aws.png" class="project-img">
+<h3>AWS Cloud System</h3>
+<p>Serverless architecture using Lambda, API Gateway, DynamoDB.</p>
+<a href="https://github.com/iMonie/aws-cloud-portfolio">View Project</a>
+</div>
+
+</section>
+
+<section class="glass">
+<h2>Publications</h2>
+<ul>
+<li><a href="https://doi.org/10.5281/zenodo.20053984">End-to-End Fraud Detection System (2026)</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.19533533">Multilingual Prompt Engineering in Healthcare AI (2026)</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.15208541">AI in Smart Cities (2025)</a></li>
+<li><a href="https://doi.org/10.5281/zenodo.15397901">Hybrid Deep Learning for MNIST (2025)</a></li>
+</ul>
+</section>
+
+<section class="glass">
+<h2>Contact</h2>
+
+<p>
+Email: 
+<a href="mailto:nou224068313@noun.edu.ng">
+nou224068313@noun.edu.ng
+</a>
+</p>
+
+<p>
+<a href="https://wa.me/2348035341982">Chat on WhatsApp</a>
+</p>
+
+<small>If email button doesn’t open, copy the address above.</small>
+
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Oghenechovwe AKPOJOTOR | Built with HTML, CSS & AI</p>
+</footer>
+
+</body>
+</html>
